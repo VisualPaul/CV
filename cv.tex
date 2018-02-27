@@ -6,7 +6,13 @@
 \usepackage[utf8]{inputenc} 
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.75 ]{geometry}
+\geometry{
+	a4paper,
+	%footskip=12pt,
+	% voffset=-1in,
+	textheight = 650pt,
+}
 \AtBeginDocument{\hypersetup{colorlinks,urlcolor=color1}}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
@@ -14,11 +20,11 @@
 % personal data
 \name{Pavel}{Shevchuk} 
 \phone[mobile]{+7~(903)~217~56~96}
+\phone[mobile]{+44~(737)~816~23~17}
 \email{ivisualpaul@gmail.com}
 \social[github]{VisualPaul}
 \social[linkedin]{pshevchuk}
-\extrainfo{codeforces profile: \href{http://codeforces.com/profile/pshevchuk}{pshevchuk} \\
-  Moscow, Russia}
+\extrainfo{Moscow, Russia}
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -35,12 +41,13 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 \makecvtitle
-\emph{Developer with mathematical \& ML skills looking for internship}
+%\emph{Developer with mathematical \& ML skills looking for internship}
+\emph{Developer with good knowledge of mathematics, algorithms, and ML}
 \section{Interests}
 \cvitem{}{computer science(machine learning, algorithms), \newline{}competitive programming, mathematics}
 
 \section{Education}
-\cventry{2014--2018}{BS CS, minor economics}{NRU Higher School of Economics}{Moscow}{}{}
+\cventry{2014-- July 2018}{BS CS}{NRU Higher School of Economics}{Moscow}{}{}
 \cventry{2016}{ADFOCS}{Summer school on distributed computing}{Saarbrücken}{}{}
 
 \section{Technical experience}
@@ -52,10 +59,11 @@
 \cvitem{use from time to time}{svn, vim, HTML. Qt, Gtk, make}
 
 \section{Work expierence}
-\cventry{2017}{Site Reliability Engineering intern at Google}{London, United Kingdom}{}{}{}
-\cventry{2016-2017}{Working at a computer vision startup}{}{}{}{}
-\cventry{2015--2016}{Teaching assistant in Computer Science course at the university}{}{}{}{}
-\cventry{2016}{Tutor in a summer school on programming for school students}{}{}{}{}
+\cventry{2018-present}{Developer internship at \href{https://yandex.com/company/}{Yandex}}{Moscow}{Improving web search pesonalisation}{}{}
+\cventry{2017}{Site Reliability Engineering intern at Google}{London, UK}{Google Analytics}{}{}
+\cventry{2016-2017}{Working at a computer vision startup}{Moscow}{}{}{}
+\cventry{2015--2016}{Teaching assistant in Computer Science course at the university}{Moscow}{}{}{}
+\cventry{2016}{Tutor in a summer school on programming for school students}{Moscow}{}{}{}
 
 \section{Projects}
 \cventry{2017}{SLA analysis}{}{}{}{A Google intern project. I created a language for describing service-level agreements (SLAs), how they depend on other services, and checked if a service can breach its SLA given that its dependencies do not breach theirs. \newline{}

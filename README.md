@@ -3,7 +3,7 @@ You probably want to open the [CV itself](https://github.com/VisualPaul/CV/blob/
 #### Why did you use moderncv?
 Well, basically it looks OK, and I do not believe human resource managers are interested in my design skills (at the end of the
 day, I am a software engineer). I would even imagine that they might appreciate similarly styled CVs since that allows them 
-to pay less attention to design and more to the substance.
+to pay less attention to the design and more to the substance.
 #### Contacts
 ivisualpaul@gmail.com
 

@@ -3,6 +3,5 @@ cv.synctex.gz
 *~
 *.log
 *.out
-*.pdf
 *.dvi
 *.aux

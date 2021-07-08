@@ -2,7 +2,10 @@
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 \moderncvstyle{classic}
-\moderncvcolor{green}
+\definecolor{color0}{gray}{0.25}
+\definecolor{color1}{gray}{0.25}
+\definecolor{color2}{gray}{0}
+% \moderncvcolor{maincolor}
 \usepackage[utf8]{inputenc} 
 
 % adjust the page margins
@@ -48,7 +51,7 @@
 % personal data
 \name{Pavel}{Shevchuk} 
 \phone[mobile]{+7~(903)~217~56~96}
-\phone[mobile]{+44~(737)~816~23~17}
+% \phone[mobile]{+44~(737)~816~23~17}
 \email{ivisualpaul@gmail.com}
 \social[github]{VisualPaul}
 \social[linkedin]{pshevchuk}
@@ -76,29 +79,29 @@
 
 \section{Education}
 \cventry{2019--2021}{MSc CS}{NRU Higher School of Economics/Skolkovo Institute of Science \& Technology}{Moscow}{joint programme}{}
-\cventry{2019--2021}{MSc CS}{NRU Higher School of Economics/Skolkovo Institute of Science \& Technology}{Moscow}{joint programme}{}
 \cventry{2014-- July 2019}{BS CS}{NRU Higher School of Economics}{Moscow}{Faculty of Computer Science}{}
 \cventry{2016}{ADFOCS}{Summer school on distributed computing}{Saarbrücken}{}{}
 
-\section{Technical experience}
+\section{Work experience}
+\cventry{2020}{Internship at Huawei}{Moscow}{Researched various ways of building joint text and video embeddings, mostly Python}{}{}{}
+\cventry{2018-2019}{Developer at Yandex}{Moscow}{Worked on a system that predicts where pedestrians will be in up to ten seconds, C++/Python, coding, data processing, model training}{}{}{}
+\cventry{July 2018-Sep 2018}{\href{https://research.samsung.com/srr}{Samsung R\&D institute Russia}}{Moscow}{Worked on various ways of performing face antispoofing on mobile devices, C++/Python}{}{}
+\cventry{Q1-2 2018}{Developer internship, \href{https://yandex.com/company/}{Yandex}}{Moscow}{Worked on accelerating the web search personalisation pipeline, C++}{}{}
+\cventry{2017}{Site Reliability Engineering intern at \href{https://www.google.com/intl/en_uk/about/our-company/}{Google}}{London}{Google Analytics. Developed a system to automatically check the SLAs of complex systems, C++/Python}{}{}
+\cventry{2016-2017}{\href{http://dpllab.tilda.ws/en/projects}{DPL Lab} (computer vision startup)}{Moscow}{}{}{}
+\cventry{2015--2016}{Teaching assistant in Computer Science course at the university}{Moscow}{}{}{}
+\cventry{2016}{Tutor in a summer school on programming \& algorithms for school students}{Moscow/Lipetsk}{}{}{}
+
+
+\section{Technical skills}
 \subsection{Programming languages}
 \cvitem{proficiency}{C++, Python}
 \cvitem{some experience}{Java, C\#, Haskell, bash}
 \subsection{Other technologies}
 \cvitem{}{git, Linux (grep/sed/perl/bash, emacs), \LaTeX , CMake, scikit, pytorch, vowpal wabbit, OpenCV}
 
-\section{Work experience}
-\cventry{2020}{Internship at Huawei}{Moscow}{Improving the video search based on joint video-text embeddings}{}{}{}
-\cventry{2018-2019}{Developer at Yandex}{Moscow}{Prediction of pedestrians' behaviour for the self-driving car}{}{}{}
-\cventry{July 2018-Sep 2018}{\href{https://research.samsung.com/srr}{Samsung R\&D institute Russia}}{Moscow}{Face antispoofing}{}{}
-\cventry{Q1-2 2018}{Developer internship, \href{https://yandex.com/company/}{Yandex}}{Moscow}{Improving web search pesonalisation}{}{}
-\cventry{2017}{Site Reliability Engineering intern at \href{https://www.google.com/intl/en_uk/about/our-company/}{Google}}{London, UK}{Google Analytics}{}{}
-\cventry{2016-2017}{\href{http://dpllab.tilda.ws/en/projects}{DPL Lab} (computer vision startup)}{Moscow}{}{}{}
-\cventry{2015--2016}{Teaching assistant in Computer Science course at the university}{Moscow}{}{}{}
-\cventry{2016}{Tutor in a summer school on programming \& algorithms for school students}{Moscow/Lipetsk}{}{}{}
-
-\section{Projects}
-\cventry{2020--2021}{Certified robustness for faces}{}{}{}{Thesis project. Proposed a new method of training certifiably robust classifiers for facial data}
+\section{Projects completed individually}
+\cventry{2020--2021}{Certified robustness for faces}{}{}{}{Thesis project. Proposed a new method of training certifiably robust classifiers for facial data. \href{https://github.com/VisualPaul/certified-robustness}{github}}
 \cventry{2017}{SLA analysis}{}{}{}{A Google intern project. I created a language for describing service-level agreements (SLAs), how they depend on other services, and checked if a service can breach its SLA given that its dependencies do not breach theirs. \newline{}
 Keywords: Bazel, Perfore, C++, Python, multithreading, Pyclif, Protocol Buffers}
 \cventry{2016--2017}{Twitter sentiment analysis}{}{}{}{A research project at the university, implemented different models and approaches to analysing a sentiment of English language tweets. \newline{}
@@ -117,22 +120,21 @@ Keywords: C, parallel programming, low level\newline{}
 \cventry{2013}{Lyrics}{}{}{}{An elegant app that displays lyrics of whatever song is playing now. (At the time no such app existed for my Windows Phone) \newline{}
 Keywords: C\#, mobile, Windows Phone, asynchronous, REST}
 
-\section{Achievements}
+\section{Competitions}
 \cvitemwithcomment{2015}{Northeastern Europe Regional Contest participant}
 {\href{https://icpc.baylor.edu/regionals/finder/moscow-subregional-2015/standings}{link}}
 \cvitemwithcomment{2015}{Vekua cup award}
 {\href{http://vekua.snarknews.info/index.cgi?data=macros/ind_ons&class=vekua2015&year=2015}{link}}
 \cvitemwithcomment{2015}{VK wild-card prize - advanced to Round 3}
 {\href{http://codeforces.com/vkcup2015}{link}}
-\cvitemwithcomment{2014}{Open Olympiads in Programming 2014 - first award}{\href{https://olympiads.ru/zaoch/2013-14/final_results.shtml}{link}}                  
-\cvitemwithcomment{2014,2013}{Finalist of Russian Olympiads in Informatics}
+\cvitemwithcomment{2014}{Open Competition in Programming 2014 - first award}{\href{https://olympiads.ru/zaoch/2013-14/final_results.shtml}{link}}                  
+\cvitemwithcomment{2014,2013}{Finalist of Russian Nat'l competition in Informatics}
 {\href{http://neerc.ifmo.ru/school/archive/2013-2014/ru-olymp-roi-2014-standings.html}{link 2014} \href{http://neerc.ifmo.ru/school/archive/2012-2013/ru-olymp-roi-2013-standings.html}{link 2015}}
 
 \section{Languages}
 \cvitem{Russian}{native speaker}
-\cvitem{English}{proficient (IELTS 6.5)}
+\cvitem{English}{proficient (Advanced/C1)}
 \cvitem{German}{basic knowledge (A2)}
 
 \end{document}
-
 

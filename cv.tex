@@ -13,6 +13,34 @@
 	% voffset=-1in,
 	textheight = 650pt,
 }
+
+\newcommand{\myhref}[2]{\href{#1}{\textcolor{red!50!black}{#2}}}
+
+\newcommand{\colorit}[1]{\textcolor{color2}{#1}}
+
+\definecolor{skoltechgrey}{RGB}{101, 101, 101}
+\definecolor{skoltechgreen}{RGB}{162, 190, 20}
+\newcommand{\Skoltech}{\textcolor{skoltechgrey}{Skol}{\textcolor{skoltechgreen}{tech}}}
+
+\definecolor{mailrublue}{RGB}{59, 115, 176}
+\definecolor{mailruorange}{RGB}{255, 169, 49}
+\newcommand{\MailRu}{{\textcolor{mailrublue}{Mail}}{\textcolor{mailruorange}{.Ru}}{\textcolor{mailrublue}{\ Group}}}
+
+\definecolor{yandexred}{RGB}{229, 38, 32}
+\newcommand{\Yandex}{{\textcolor{yandexred}Y}andex}
+
+\definecolor{parallelsred}{RGB}{215, 38, 55}
+\newcommand{\Parallels}{{\textcolor{parallelsred}{\textbf{||}}}Parallels}
+\newcommand{\gx}[1]{\footnote{gurux13: #1}}
+
+\definecolor{miptblue}{RGB}{16, 114, 185}
+\newcommand{\MIPT}{{\textcolor{miptblue}{Moscow Institute\ of\ Physics\ and\ Technology}}}
+
+\definecolor{googleblue}{RGB}{72, 133, 237}
+\definecolor{googlered}{RGB}{219, 50, 54}
+\definecolor{googleyellow}{RGB}{244, 194, 13}
+\definecolor{googlegreen}{RGB}{60, 186, 84}
+\newcommand{\Google}{{\textcolor{googleblue}G}{\textcolor{googlered}o}{\textcolor{googleyellow}o}{\textcolor{googleblue}g}{\textcolor{googlegreen}l}{\textcolor{googlered}e}}
 \AtBeginDocument{\hypersetup{colorlinks,urlcolor=color1}}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
@@ -42,55 +70,51 @@
 \begin{document}
 \makecvtitle
 %\emph{Developer with mathematical \& ML skills looking for internship}
-\emph{Developer with good knowledge of mathematics, algorithms, and ML}
-\section{Interests}
-\cvitem{}{computer science(machine learning, algorithms), \newline{}competitive programming, mathematics}
+\emph{SWE with machine learning \& algorithm skills}
+%\section{Interests}
+%\cvitem{}{computer science(machine learning, algorithms), \newline{}competitive programming, mathematics}
 
 \section{Education}
-\cventry{2014-- July 2018}{BS CS}{NRU Higher School of Economics}{Moscow}{}{}
+\cventry{2019--2021}{MSc CS}{NRU Higher School of Economics/Skolkovo Institute of Science \& Technology}{Moscow}{joint programme}{}
+\cventry{2019--2021}{MSc CS}{NRU Higher School of Economics/Skolkovo Institute of Science \& Technology}{Moscow}{joint programme}{}
+\cventry{2014-- July 2019}{BS CS}{NRU Higher School of Economics}{Moscow}{Faculty of Computer Science}{}
 \cventry{2016}{ADFOCS}{Summer school on distributed computing}{Saarbrücken}{}{}
 
 \section{Technical experience}
 \subsection{Programming languages}
 \cvitem{proficiency}{C++, Python}
-\cvitem{some experience}{Java, C\#, Haskell, Assembly, Bash}
+\cvitem{some experience}{Java, C\#, Haskell, bash}
 \subsection{Other technologies}
-\cvitem{using every day}{git, Linux (grep/sed/perl/bash, emacs), \LaTeX , CMake, scikit, vowpal wabbit, OpenCV}
-\cvitem{use from time to time}{svn, vim, HTML. Qt, Gtk, make}
+\cvitem{}{git, Linux (grep/sed/perl/bash, emacs), \LaTeX , CMake, scikit, pytorch, vowpal wabbit, OpenCV}
 
-\section{Work expierence}
-\cventry{2018-present}{Developer internship at \href{https://yandex.com/company/}{Yandex}}{Moscow}{Improving web search pesonalisation}{}{}
+\section{Work experience}
+\cventry{2020}{Internship at Huawei}{Moscow}{Improving the video search based on joint video-text embeddings}{}{}{}
+\cventry{2018-2019}{Developer at Yandex}{Moscow}{Prediction of pedestrians' behaviour for the self-driving car}{}{}{}
+\cventry{July 2018-Sep 2018}{\href{https://research.samsung.com/srr}{Samsung R\&D institute Russia}}{Moscow}{Face antispoofing}{}{}
+\cventry{Q1-2 2018}{Developer internship, \href{https://yandex.com/company/}{Yandex}}{Moscow}{Improving web search pesonalisation}{}{}
 \cventry{2017}{Site Reliability Engineering intern at \href{https://www.google.com/intl/en_uk/about/our-company/}{Google}}{London, UK}{Google Analytics}{}{}
 \cventry{2016-2017}{\href{http://dpllab.tilda.ws/en/projects}{DPL Lab} (computer vision startup)}{Moscow}{}{}{}
 \cventry{2015--2016}{Teaching assistant in Computer Science course at the university}{Moscow}{}{}{}
-\cventry{2016}{Tutor in a summer school on programming for school students}{Moscow}{}{}{}
+\cventry{2016}{Tutor in a summer school on programming \& algorithms for school students}{Moscow/Lipetsk}{}{}{}
 
 \section{Projects}
+\cventry{2020--2021}{Certified robustness for faces}{}{}{}{Thesis project. Proposed a new method of training certifiably robust classifiers for facial data}
 \cventry{2017}{SLA analysis}{}{}{}{A Google intern project. I created a language for describing service-level agreements (SLAs), how they depend on other services, and checked if a service can breach its SLA given that its dependencies do not breach theirs. \newline{}
 Keywords: Bazel, Perfore, C++, Python, multithreading, Pyclif, Protocol Buffers}
 \cventry{2016--2017}{Twitter sentiment analysis}{}{}{}{A research project at the university, implemented different models and approaches to analysing a sentiment of English language tweets. \newline{}
 Keywords: Python, Tensorflow, vowpal wabbit, LSTM, C-LSTM, BoW, linear classification}
 \cventry{2016}{Post stamps search}{}{}{}{A project for a computer vision startup. Finds postmark in the database by photo. 
 The project as whole is a Docker, which can be called via RESTful API. \newline{}
-Keywords: OpenCV, Python, scikit-image, Django, REST, Docker}
-\cventry{2016}{Secure chat}{}{}{}{
-A chat prototype with encryption\newline{}
-Keywords: Java, database, network, encryption\newline{}
-\href{https://github.com/VisualPaul/SecureChat}{this project on github}}
-\cventry{2015}{last.fm classification}{}{}{}{Web project that finds out preferences of last.fm user.\newline{}%
+Keywords: OpenCV, Python, scikit-image, Django, REST, Docker}\cventry{2015}{last.fm classification}{}{}{}{Web project that finds out preferences of last.fm user.\newline{}%
 Keywords: classification, machine learning, Python, Jinja2, Web, Google App engine, Beaker cache, REST, Asynchronous\newline{}
 \href{https://github.com/cs-hse-projects/Lfm_class_shevchuk}{this project on github}}
-\cventry{2015}{Source code plagiarism detector}{}{}{}{Source code plagiarism detector for VK cup 2015 wild-card round 2 \newline{}
-Keywords: C++, Algorithms\newline{}
-\href{https://github.com/VisualPaul/vk-wildcard}{this project on github}}
 \cventry{2014--2015}{Lisp interpreter}{}{}{}{I did a garbage collector here, which is a quite complicated thing.\newline{}
 Keywords: C++, valgrind, GNU MP, garbage collection, interpreter, programming languages
 \href{https://github.com/VisualPaul/lisp-interp}{this project on github}}
 \cventry{2014}{xv6}{}{}{}{Course project in making improvements for a teaching OS.\newline{}
 Keywords: C, parallel programming, low level\newline{}
 \href{https://bitbucket.org/pshevchuk/xv6-shevchuk/overview}{this project on bitbucket}}
-\cventry{2013}{Lyrics}{}{}{}{An elegant app that displays lyrics of a song, that is playing now.\newline{}
-At the time no such app existed for the Windows Phone \newline{}
+\cventry{2013}{Lyrics}{}{}{}{An elegant app that displays lyrics of whatever song is playing now. (At the time no such app existed for my Windows Phone) \newline{}
 Keywords: C\#, mobile, Windows Phone, asynchronous, REST}
 
 \section{Achievements}
@@ -106,7 +130,7 @@ Keywords: C\#, mobile, Windows Phone, asynchronous, REST}
 
 \section{Languages}
 \cvitem{Russian}{native speaker}
-\cvitem{English}{proficient}
+\cvitem{English}{proficient (IELTS 6.5)}
 \cvitem{German}{basic knowledge (A2)}
 
 \end{document}
